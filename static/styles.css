@@ -1,0 +1,44 @@
+html{
+    background-color: rgb(57, 182, 151);
+}
+body{
+    background-color: rgb(243, 232, 211);
+    font-family: "Verdana";
+    text-align: center;
+    margin: 0;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 30px auto;
+    max-width: 40%;
+}
+
+
+label{
+    display: block;
+    margin: 10px;
+    text-align: left;
+    padding-left: 20%;
+}
+button{
+    font-size: 18px;
+    padding: 2px 5px;
+    margin: 20px 0;
+    border-radius: 5px;
+    
+
+}
+button:hover{
+    cursor:pointer;
+}
+.start{
+    background-color: rgb(43, 182, 78);
+}
+.start:hover{
+    background-color: rgb(162, 226, 178);
+}
+.next{
+    background-color: rgb(102, 155, 224);
+}
+.next:hover{
+    background-color: rgb(147, 182, 224);
+}
