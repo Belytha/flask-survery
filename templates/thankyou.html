@@ -3,5 +3,10 @@
 {% block title %}Thank You!{% endblock %}
 
 {% block content %}
-<h3>Thank you for filling out this survey!</h3>
+<h1>Thank you for filling out {{survey.title}}</h1>
+<h3>Question Review</h3>
+{% for question in questions %}
+<p><b>{{question.question}}  </b>{{responses[loop.index0].get("answer")}}  <i><p>{{responses[loop.index0].get("comment")}}</p></i></p>
+{% endfor %}
+<a href="/choose"><button class="take-another">Take another Survey</button></a>
 {% endblock %}

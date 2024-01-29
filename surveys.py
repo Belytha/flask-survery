@@ -48,7 +48,21 @@ personality_quiz = Survey(
     ]
 )
 
+airline_survey = Survey(
+    "Airline Airlines Survey",
+    "Please fill out a survey about your experience with us.",
+    [
+        Question("Did you enjoy your flight with Airline Airlines?"),
+        Question("Did you feel you were provided enough assistance when needed? If not, why?"),
+        Question("Did you feel safe and confortable on your flight at Airline Airlines. If not, why?",
+                 ["Yes", "No"], allow_text=True),
+        Question("How would you rate your overall experience at Airline Airlines and why?",
+                 ["Very good", "Good","Nuetral", "Bad", "Very Bad"], allow_text=True),
+    ]
+)
+
 surveys = {
-    "satisfaction": satisfaction_survey,
-    "personality": personality_quiz,
+    "Satisfaction": satisfaction_survey,
+    "Personality": personality_quiz,
+    "Airline": airline_survey,
 }
